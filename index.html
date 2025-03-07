@@ -1,0 +1,1394 @@
+d
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style3.css">
+
+</head>
+
+<body>
+  <div class="phone">
+    <!-- Home -->
+    <div class="screen" id="screen1">
+      <button id='Info' class="Info" onclick="goToScreen2()">Info</button>
+    </div>
+
+    <!-- Animal Selection-->
+    <div class="screen hidden" id="screen2">
+      <h1 id="as">Select an animal</h1>
+      <button class='back' onclick="goToScreen1()">Back</button>
+      <div id="dogs">Dogs</div>
+      <div id="cats">Cats</div>
+      <button class='image-button' onclick="goToScreen3()">
+        <img class='dog' src="dog2.webp">
+      </button>
+      <button class='image-button' onclick="goToScreen4()">
+        <img class='cat' src="cat1.webp">
+      </button>
+    </div>
+    <!-- Dog breeds -->
+    <div class="screen hidden" id="screen3">
+      <div id="golden">Golden Retriever</div>
+      <div id="french-bulldog">French Bulldog </div>
+      <div id="german">German Shepherd</div>
+      <div id="rotwiler">Rottweiler</div>
+      <div id="poodle">Poodle</div>
+      <div id="york">Yorkshire Terrier</div>
+      <h1>dog breed</h1>
+      <button class='back' onclick="goToScreen2()">Back</button>
+      <button class='image-button' onclick="goToScreen6()">
+        <img class='golden' src="dog2.webp" height="150px" width="50px">
+      </button>
+      <button class='image-button' onclick="goToScreen7()">
+        <img class='french-bulldog' src="french bulldog.webp" height="150px" width="50px">
+      </button>
+      <button class='image-button' onclick="goToScreen8()">
+        <img class='german' src="german.webp" height="150px" width="50px">
+      </button>
+      <button class='image-button' onclick="goToScreen9()">
+        <img class='poodle' src="poodle.webp" height="150px" width="50px">
+      </button>
+      <button class='image-button' onclick="goToScreen10()">
+        <img class='rotwiler' src="rotwiler.webp" height="150px" width="50px">
+      </button>
+      <button class='image-button' onclick="goToScreen11()">
+        <img class='york' src="york.webp" height="150px" width="50px">
+      </button>
+
+
+
+
+    </div>
+  </div>
+  <!-- cat breeds -->
+  <div class="screen hidden" id="screen4">
+    <h1>cat breeds </h1>
+    <div id="main-coon">Maine Coon</div>
+    <div id="saimese">Saimese</div>
+    <div id="persian">Persian</div>
+    <div id="bengal">Bengal</div>
+    <div id="ragdoll">Ragdoll </div>
+    <div id="shorthair">British Shorthair</div>
+    <button class='back' onclick="goToScreen2()">Back</button>
+    <button class='image-button' onclick="goToScreen5()">
+      <img class='main-coon' src="main-coon.webp" height="150px" width="50px">
+    </button>
+    <button class='back' onclick="goToScreen2()">Back</button>
+    <button class='image-button' onclick="goToScreen12()">
+      <img class='saimese' src="saimese.webp" height="150px" width="50px">
+    </button>
+    <button class='back' onclick="goToScreen2()">Back</button>
+    <button class='image-button' onclick="goToScreen13()">
+      <img class='persian' src="persian.webp" height="150px" width="50px">
+    </button>
+    <button class='back' onclick="goToScreen2()">Back</button>
+    <button class='image-button' onclick="goToScreen14()">
+      <img class='bengal' src="bengal.webp" height="150px" width="50px">
+    </button>
+    <button class='image-button' onclick="goToScreen15()">
+      <img class='ragdoll' src="ragdoll.webp" height="150px" width="50px">
+    </button>
+    <button class='image-button' onclick="goToScreen16()">
+      <img class='british-shorthair' src="british-shorthair.webp" height="150px" width="50px">
+    </button>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- (main coon)(info) -->
+  <div class="screen hidden" id="screen5">
+    <h1>Maine Coon</h1>
+    <button class="Food2" onclick="goToScreen47()">Food</button>
+    <button class="baths2" onclick="goToScreen49()">Baths</button>
+    <button class="grooming2" onclick="goToScreen50()">Grooming</button>
+    <button class="potty2" onclick="goToScreen51()">litter box</button>
+    <button class='back' onclick="goToScreen4()">Back</button>
+  </div>
+  <!-- (saimese)(info) -->
+  <div class="screen hidden" id="screen12">
+    <h1>Saimese</h1>
+    <button class="Food2" onclick="goToScreen52()">Food</button>
+    <button class="baths2" onclick="goToScreen54()">Baths</button>
+    <button class="grooming2" onclick="goToScreen55()">Grooming</button>
+    <button class="potty2" onclick="goToScreen56()">litter box</button>
+    <button class='back' onclick="goToScreen4()">Back</button>
+  </div>
+  <!-- (persian)(info) -->
+  <div class="screen hidden" id="screen13">
+    <h1>Persian</h1>
+    <button class="Food2" onclick="goToScreen57()">Food</button>
+    <button class="baths2" onclick="goToScreen59()">Baths</button>
+    <button class="grooming2" onclick="goToScreen60()">Grooming</button>
+    <button class="potty2" onclick="goToScreen61()">litter box</button>
+    <button class='back' onclick="goToScreen4()">Back</button>
+  </div>
+  <!-- (bengal)(info) -->
+  <div class="screen hidden" id="screen14">
+    <h1>Bengal</h1>
+    <button class="Food2" onclick="goToScreen62()">Food</button>
+    <button class="baths2" onclick="goToScreen64()">Baths</button>
+    <button class="grooming2" onclick="goToScreen65()">Grooming</button>
+    <button class="potty2" onclick="goToScreen66()">litter box</button>
+    <button class='back' onclick="goToScreen4()">Back</button>
+  </div>
+  <!-- (ragdoll)(info) -->
+  <div class="screen hidden" id="screen15">
+    <h1>Ragdoll</h1>
+    <button class="Food2" onclick="goToScreen67()">Food</button>
+    <button class="baths2" onclick="goToScreen69()">Baths</button>
+    <button class="grooming2" onclick="goToScreen70()">Grooming</button>
+    <button class="potty2" onclick="goToScreen71()">litter box</button>
+    <button class='back' onclick="goToScreen4()">Back</button>
+  </div>
+  <!-- (british shorthair)(info) -->
+  <div class="screen hidden" id="screen16">
+    <h1>British Shorthair</h1>
+    <button class="Food2" onclick="goToScreen72()">Food</button>
+    <button class="baths2" onclick="goToScreen74()">Baths</button>
+    <button class="grooming2" onclick="goToScreen75()">Grooming</button>
+    <button class="potty2" onclick="goToScreen76()">litter box</button>
+    <button class='back' onclick="goToScreen4()">Back</button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- (golden)(info) -->
+  <div class="screen hidden" id="screen6">
+    <h1>Golden Retriever</h1>
+    <button class="Food" onclick="goToScreen17()">Food</button>
+    <button class="walks" onclick="goToScreen18()">Walks</button>
+    <button class="baths" onclick="goToScreen19()">Baths</button>
+    <button class="grooming" onclick="goToScreen20()">Grooming</button>
+    <button class="potty" onclick="goToScreen21()">potty breaks</button>
+    <button class='back' onclick="goToScreen3()">Back</button>
+  </div>
+
+  <!-- (french-bulldog)(dog) -->
+  <div class="screen hidden" id="screen7">
+    <h1>french bulldog</h1>
+    <button class="Food" onclick="goToScreen22()">Food</button>
+    <button class="walks" onclick="goToScreen23()">Walks</button>
+    <button class="baths" onclick="goToScreen24()">Baths</button>
+    <button class="grooming" onclick="goToScreen25()">Grooming</button>
+    <button class="potty" onclick="goToScreen26()">potty breaks</button>
+    <button class='back' onclick="goToScreen3()">Back</button>
+  </div>
+  <!-- (germany)(dog) -->
+  <div class="screen hidden" id="screen8">
+    <h1>German Shepherd</h1>
+    <button class="Food" onclick="goToScreen27()">Food</button>
+    <button class="walks" onclick="goToScreen28()">Walks</button>
+    <button class="baths" onclick="goToScreen29()">Baths</button>
+    <button class="grooming" onclick="goToScreen30()">Grooming</button>
+    <button class="potty" onclick="goToScreen31()">potty breaks</button>
+    <button class='back' onclick="goToScreen3()">Back</button>
+  </div>
+  <!-- (poodle)(dog) -->
+  <div class="screen hidden" id="screen9">
+    <h1>Poodle</h1>
+    <button class="Food" onclick="goToScreen32()">Food</button>
+    <button class="walks" onclick="goToScreen33()">Walks</button>
+    <button class="baths" onclick="goToScreen34()">Baths</button>
+    <button class="grooming" onclick="goToScreen35()">Grooming</button>
+    <button class="potty" onclick="goToScreen36()">potty breaks</button>
+    <button class='back' onclick="goToScreen3()">Back</button>
+  </div>
+  <!-- (rotwiler)(dog) -->
+  <div class="screen hidden" id="screen10">
+    <h1>Rottweiler</h1>
+    <button class="Food" onclick="goToScreen37()">Food</button>
+    <button class="walks" onclick="goToScreen38()">Walks</button>
+    <button class="baths" onclick="goToScreen39()">Baths</button>
+    <button class="grooming" onclick="goToScreen40()">Grooming</button>
+    <button class="potty" onclick="goToScreen41()">potty breaks</button>
+    <button class='back' onclick="goToScreen3()">Back</button>
+  </div>
+  <!-- (york)(dog) -->
+  <div class="screen hidden" id="screen11">
+    <h1>Yorkshire Terrier</h1>
+    <button class="Food" onclick="goToScreen42()">Food</button>
+    <button class="walks" onclick="goToScreen43()">Walks</button>
+    <button class="baths" onclick="goToScreen44()">Baths</button>
+    <button class="grooming" onclick="goToScreen45()">Grooming</button>
+    <button class="potty" onclick="goToScreen46()">potty breaks</button>
+    <button class='back' onclick="goToScreen3()">Back</button>
+  </div>
+
+
+
+
+  <!-- ------------------------------------------------------------------------------>
+  <!-- Golden Retriever (food)  -->
+  <div class="screen hidden" id="screen17">
+    <h1>Golden Retriever</h1>
+    <h1>Food</h1>
+    <h1 class="t1">Golden Retrievers require a well-balanced diet tailored to their age and activity level</h1>
+    <h1 class="t1">Puppies (2-6 months): 3-4 small meals, 2-3 cups/day</h1>
+    <h1 class="t1">Juveniles (6-12 months): 3 meals, 3-4 cups/day</h1>
+    <h1 class="t1">Adults (1+ years): 2 meals, 2-3.5 cups/day</h1>
+    <h1 class="t1">Seniors: Adjust based on weight & activity</h1>
+
+    <h1 class="t2">Feeding Tips:</h1>
+    <h1 class="t2">✔️ Always provide fresh water</h1>
+    <h1 class="t2">✔️ Limit treats to 10% of daily calories
+    </h1>
+    <h1 class="t2">✔️ Avoid artificial additives & fillers
+    </h1>
+    <h1 class="t2">✔️ Consult a vet for special dietary needs
+
+
+
+
+
+
+
+    </h1>
+
+
+
+    <div id="golden-link">
+      <a href="https://www.royalcanin.com/us/dogs/products/retail-products/golden-retriever-puppy-3979" target="_blank">
+        Puppy food
+      </a>
+    </div>
+    <div id="golden-link">
+      <a href="https://www.amazon.com/Wellness-Complete-Natural-Food-30-Pound/dp/B001HYD6AY?th=1" target="_blank">
+        Adult food
+      </a>
+    </div>
+    <div id="golden-link">
+      <a href="https://www.amazon.com/Holistic-Select-Natural-Food-24-Pound/dp/B0757Q7JY5" target="_blank">
+        Senior food
+      </a>
+    </div>
+    <button class='back' onclick="goToScreen6()">Back</button>
+  </div>
+  <!-- Golden Retriever (walking)  -->
+  <div class="screen hidden" id="screen18">
+    <h1>Golden Retriever</h1>
+    <h1>Walks</h1>
+    <h1 class="t1">Golden Retrievers are active and energetic dogs that need regular exercise to stay healthy and happy
+    </h1>
+    <h1 class="t1">Puppies (under 6 months): 5 minutes per month of age, twice a day (e.g., a 4-month-old puppy = 20 min
+      walks)</h1>
+    <h1 class="t1">Adults (1+ years): 1-2 hours per day, split into two walks</h1>
+    <h1 class="t1">Seniors: Adjust based on energy and health, 30-60 minutes daily</h1>
+
+
+    <h1 class="t2">Walking Tips:</h1>
+    <h1 class="t2">✔️ Use a sturdy leash and harness for control</h1>
+    <h1 class="t2">✔️ Avoid over-exercising puppies (their joints are still developing)</h1>
+    <h1 class="t2">✔️ Mix it up with slow walks, brisk walks, and playtime</h1>
+
+    <button class='back' onclick="goToScreen6()">Back</button>
+  </div>
+
+  <!-- Golden Retriever (baths)  -->
+  <div class="screen hidden" id="screen19">
+    <h1>Golden Retriever</h1>
+    <h1 class="t1">How Often to Bathe?</h1>
+    <h1 class="t1">Every 4-6 weeks is ideal</h1>
+    <h1 class="t1">Bathe more often if they get dirty or smelly</h1>
+    <h1 class="t1">Avoid overbathing to prevent dry skin</h1>
+
+    <h1 class="t2">Bathing Tips:</h1>
+    <h1 class="t2">✔️ Brush before & after to remove tangles and loose fur</h1>
+    <h1 class="t2">✔️ Rinse thoroughly to prevent skin irritation</h1>
+    <h1 class="t2">✔️ Dry completely, especially their undercoat, to prevent infections</h1>
+    <div id="golden-link">
+      <a href="https://www.amazon.com/Puppies-Naturally-Tearless-Conditioner-Buttermilk/dp/B00CVTRO48?th=1"
+        target="_blank">
+        Puppy shampoo
+      </a>
+    </div>
+    <div id="golden-link">
+      <a href="https://www.earthbath.com/products/oatmeal-aloe-shampoo-fragrance-free?srsltid=AfmBOooJD7R17WBBsZj9DgIqP0tDp4rxdCD0MamVxpO3rC0CZUdgKXeq"
+        target="_blank">
+        Adult shampoo
+      </a>
+    </div>
+    <div id="golden-link">
+      <a href="https://groomerschoice.com/bark2basics-senior-bark-shampoo-16-oz/?srsltid=AfmBOoqa7fjq8UF6GmC0EwAfyVKDuRllyKbAlJQ4XPSz5ETDYrLZZGhJ"
+        target="_blank">
+        Senior shampoo
+      </a>
+    </div>
+    <button class='back' onclick="goToScreen6()">Back</button>
+  </div>
+  <!-- Golden Retriever (grooming)  -->
+  <div class="screen hidden" id="screen20">
+    <h1>Golden Retriever</h1>
+    <h1>Grooming</h1>
+    <h1 class="t1">How Often to Groom?</h1>
+    <h1 class="t1">Brushing: 3-5 times per week (daily during shedding seasons)</h1>
+    <h1 class="t1">Nail Trimming: Every 2-4 weeks</h1>
+    <h1 class="t1">Ear Cleaning: Weekly to prevent infections</h1>
+    <h1 class="t1">Teeth Brushing: 2-3 times per week for good oral health</h1>
+
+    <h1 class="t2">Grooming Tips:</h1>
+    <h1 class="t2">✔️ Trim paw fur & sanitary areas to keep them clean</h1>
+    <h1 class="t2">✔️ Check for ticks, fleas, or skin issues during grooming</h1>
+    <h1 class="t2">✔️ Keep a calm and positive environment with treats & praise</h1>
+
+    <button class='back' onclick="goToScreen6()">Back</button>
+  </div>
+
+  <!-- Golden Retriever (potty)  -->
+  <div class="screen hidden" id="screen21">
+    <h1>Golden Retriever</h1>
+    <h1 class="t1">How Often Do They Need to Go?</h1>
+    <h1 class="t1">Puppies (Under 6 months): Every 1-2 hours, plus after meals, naps, and playtime</h1>
+    <h1 class="t1">Juveniles (6-12 months): Every 3-4 hours</h1>
+    <h1 class="t1">Adults (1+ years): Every 4-6 hours (at least 3-5 times a day)</h1>
+    <h1 class="t1">Seniors: More frequent breaks as bladder control weakens</h1>
+
+    <h1 class="t2">Training Tips:</h1>
+    <h1 class="t2">✔️ Stick to a schedule</h1>
+    <h1 class="t2">✔️ Take out after eating, drinking, or waking up</h1>
+    <h1 class="t2">✔️ Use treats & praise for reinforcement</h1>
+    <h1 class="t2">✔️ Pick a designated potty spot</h1>
+    <button class='back' onclick="goToScreen6()">Back</button>
+  </div>
+
+
+
+
+  <!-- ------------------------------------------------------------------------------>
+  <!-- french-bulldog (food)  -->
+  <div class="screen hidden" id="screen22">
+    <h1>french bulldog</h1>
+    <h1>Food</h1>
+    <h1 class="t1">French Bulldogs are small, muscular dogs with unique dietary needs</h1>
+    <h1 class="t1">How Much & How Often?</h1>
+    <h1 class="t1">Puppies (under 6 months): 3 meals/day, 1-1.5 cups total</h1>
+    <h1 class="t1">Adults (1-7 years): 2 meals/day, 1.5-2.5 cups total</h1>
+    <h1 class="t1">Seniors (7+ years): Adjust portions based on weight & activity</h1>
+
+    <h1 class="t2">Feeding Tips:</h1>
+    <h1 class="t2">✔️ Avoid foods that are high in fillers like corn and soy</h1>
+    <h1 class="t2">✔️ Monitor weight carefully, as French Bulldogs are prone to obesity</h1>
+    <h1 class="t2">✔️ Ensure fresh water is always available</h1>
+
+    <div id="golden-link">
+      <a href="https://www.amazon.com/Puppies-Naturally-Tearless-Conditioner-Buttermilk/dp/B00CVTRO48?th=1"
+        target="_blank">
+        Puppy shampoo
+      </a>
+    </div>
+    <div id="golden-link">
+      <a href="https://www.earthbath.com/products/oatmeal-aloe-shampoo-fragrance-free?srsltid=AfmBOooQQd7MeeLnhBzn-fxjoGOPNmOPgHMTEmGxk4QgNBtN9qg9xNGq"
+        target="_blank">
+        Adult shampoo
+      </a>
+    </div>
+    <div id="golden-link">
+      <a href="https://www.amazon.com/Virbac-11716-Epi-Soothe-Pet-Shampoo/dp/B074P63R1S?th=1" target="_blank">
+        Senior shampoo
+      </a>
+    </div>
+    <button class='back' onclick="goToScreen7()">Back</button>
+  </div>
+  <!--  french-bulldog (walking)  -->
+  <div class="screen hidden" id="screen23">
+    <h1>French bulldog</h1>
+    <h1>Walks</h1>
+    <h1 class="t1">French Bulldogs require regular but moderate exercise to maintain their health without overexertion</h1>
+    <h1 class="t1">Puppies (under 6 months): 5-minute walks, 2-3 times a day</h1>
+    <h1 class="t1">Juveniles (6-12 months): 10-15 minute walks, 2 times a day</h1>
+    <h1 class="t1">Adults (1+ years): 15-30 minute walks, 1-2 times a day</h1>
+    <h1 class="t1">Seniors: Short, slow walks based on energy level</h1>
+    <h1 class="t2">Walking Tips:</h1>
+    <h1 class="t2">✔️ Avoid heat french bulldog overheat easily</h1>
+    <h1 class="t2">✔️ Use a harness to protect their neck</h1>
+    <h1 class="t2">✔️ Keep a steady, relaxed pace</h1>
+    <h1 class="t2">✔️ Watch for exhaustion or breathing issues</h1>
+    <button class='back' onclick="goToScreen7()">Back</button>
+  </div>
+
+  <!--french-bulldog(baths)  -->
+  <div class="screen hidden" id="screen24">
+    <h1>french bulldog</h1>
+    <h1>Baths</h1>
+    <h1 class="t1">French Bulldogs have sensitive skin, so bathing should be gentle and not too frequent</h1>
+    <h1 class="t1">Puppies: Every 4-6 weeks or as needed</h1>
+    <h1 class="t1">Adults: Every 1-2 months</h1>
+    <h1 class="t1">Seniors: Every 1-2 months, adjusting for skin health</h1>
+  
+    <h1 class="t2">Bathing Tips:</h1>
+    <h1 class="t2">✔️ Use lukewarm water and rinse thoroughly</h1>
+    <h1 class="t2">✔️ Avoid over-bathing to prevent dry skin</h1>
+    <h1 class="t2">✔️ Clean wrinkles gently to prevent infections</h1>
+    <h1 class="t2">✔️ Dry thoroughly, especially in skin folds</h1>
+
+    <div id="golden-link">
+      <a href="https://www.amazon.com/Puppies-Naturally-Tearless-Conditioner-Buttermilk/dp/B00CVTRO48?th=1"
+        target="_blank">
+        Puppy shampoo
+      </a>
+    </div>
+    <div id="golden-link">
+      <a href="https://www.earthbath.com/products/oatmeal-aloe-shampoo-vanilla-almond?srsltid=AfmBOopvDReDqoovOqRv-50NyhRFnIyHThSV3Vkxfbpgwj7Q7m5PO0cp"
+        target="_blank">
+        Adult shampoo
+      </a>
+    </div>
+    <div id="golden-link">
+      <a href="https://vetsbest.com/products/hypo-allergenic-dog-shampoo" target="_blank">
+        Senior shampoo
+      </a>
+    </div>
+    
+    <button class='back' onclick="goToScreen7()">Back</button>
+  </div>
+  <!-- french-bulldog (grooming)  -->
+  <div class="screen hidden" id="screen25">
+    <h1>french bulldog</h1>
+    <h1>Grooming</h1>
+    <h1 class="t1">French Bulldogs have a short coat, but regular grooming is essential to keep their skin and fur healthy
+
+</h1>
+     <h1 class="t1"> Brushing: 2-3 times per week to remove loose fur</h1>
+     <h1 class="t1">Ears: Check and clean weekly to prevent infections</h1>
+     <h1 class="t1">Wrinkles: Wipe daily to avoid dirt buildup</h1>
+     <h1 class="t1">Nails: Trim every 2-4 weeks to prevent discomfort</h1>
+     <h1 class="t1">Teeth: Brush 2-3 times per week for dental health
+
+</h1>
+     <h1 class="t2">Grooming Tips:
+</h1>
+    <h1 class="t2">✔️ Use a soft-bristle brush or rubber grooming mitt</h1>
+    <h1 class="t2">✔️ Choose dog-safe wipes for gentle cleaning</h1>
+    <h1 class="t2">✔️ Reward with treats to make grooming positive</h1>
+ 
+    
+    <button class='back' onclick="goToScreen7()">Back</button>
+  </div>
+
+  <!-- french-bulldog (potty)  -->
+  <div class="screen hidden" id="screen26">
+    <h1>french bulldog</h1>
+    <h1>Potty breaks</h1>
+    <h1 class="t1">French Bulldogs need consistent potty breaks due to their small bladder and sensitive digestion</h1>
+    <h1 class="t1">Puppies (<6 months): Every 2-3 hours + after meals, play, & naps</h1>
+    <h1 class="t1">Juveniles (6-12 months): Every 3-4 hours</h1>
+    <h1 class="t1">Adults (1+ years): Every 4-6 hours</h1>
+    <h1 class="t1">Seniors: More frequent, depending on bladder control</h1>
+    <h1 class="t2">Potty Training Tips:</h1>
+    <h1 class="t2">✔️ Stick to a regular schedule for faster training</h1>
+    <h1 class="t2">✔️ Take them to the same spot to reinforce habit</h1>
+    <h1 class="t2">✔️ Reward with praise or treats after success</h1>
+    <button class='back' onclick="goToScreen7()">Back</button>
+  </div>
+  <!-- ------------------------------------------------------------------------------>
+
+
+
+  <!-- ------------------------------------------------------------------------------>
+  <!-- German Shepherd (food)  -->
+  <div class="screen hidden" id="screen27">
+    <h1>German Shepherd</h1>
+    <h1>Food</h1>
+    <h1 class="t1">German Shepherds need a high-protein diet for strength and energy.</h1>
+<h1 class="t1">Puppies (2-12 months): 3-4 meals/day, 2-4 cups</h1>
+<h1 class="t1">Adults (1-7 years): 2 meals/day, 3-5 cups</h1>
+<h1 class="t1">Seniors (7+ years): 2 smaller meals/day, adjust as needed</h1>
+
+<h1 class="t1">Feeding Tips:</h1>
+<h1 class="t1">✔️ Keep fresh water available</h1>
+<h1 class="t1">✔️ Choose protein-rich food, avoid fillers</h1>
+<h1 class="t1">✔️ Adjust portions for weight & activity</h1>
+    <div id="golden-link">
+      <a href="https://www.royalcanin.com/us/dogs/products/retail-products/german-shepherd-puppy-2519"
+        target="_blank">
+        Puppy food
+      </a>
+    </div>
+    <div id="golden-link">
+      <a href="https://www.amazon.com/Blue-Buffalo-Wilderness-Protein-Wholesome/dp/B0BMDGR4Q6?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=ATVPDKIKX0DER&gPromoCode=sns_us_en_5_2023Q4&gQT=2&th=1"
+        target="_blank">
+        Adult food
+      </a>
+    </div>
+    <div id="golden-link">
+      <a href="https://www.amazon.com/Hills-Science-Diet-Senior-Chicken/dp/B07L5FPMNT?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=ATVPDKIKX0DER&gPromoCode=sns_us_en_5_2023Q4&gQT=2" target="_blank">
+        Senior food
+      </a>
+    </div>
+
+    <button class='back' onclick="goToScreen8()">Back</button>
+  </div>
+  <!-- German Shepherd (walking)  -->
+  <div class="screen hidden" id="screen28">
+    <h1>German Shepherd</h1>
+    <h1>Walks</h1>
+     <h1 class="t1">German Shepherds are active dogs that need plenty of daily exercise to stay healthy and happy.
+
+</h1>
+    <h1 class="t1">Puppies (<6 months): 5 minutes per month of age, 2-3xday</h1>
+    <h1 class="t1">Juveniles (6-12 months): 30-45 min walks, 1-2x/day
+</h1>
+    <h1 class="t1">Adults (1-7 years): 60+ min walks, 1-2x/day
+</h1>
+    <h1 class="t1">Seniors (7+ years): 30-45 min gentle walks, adjusting for mobility
+
+</h1>
+    <h1 class="t1">Walking Tips:
+</h1>
+    <h1 class="t1">✔️ Use a strong leash & harness for control
+</h1>
+    <h1 class="t1">✔️ Avoid over-exercise in puppies to protect joints
+</h1>
+<h1 class="t1">✔️ Adjust pace and distance for age & health</h1>
+    <button class='back' onclick="goToScreen8()">Back</button>
+  </div>
+
+  <!--German Shepherd(baths)  -->
+  <div class="screen hidden" id="screen29">
+    <h1>German Shepherd</h1>
+    <h1>Baths</h1>
+     <h1 class="t1">German Shepherds have a double coat that needs proper care to stay clean and healthy</h1>
+     <h1 class="t1">Puppies (<12 months): Every 6-8 weeks or as needed</h1>
+     <h1 class="t1">Adults (1-7 years): Every 2-3 months (more if dirty)</h1>
+     <h1 class="t1">Seniors (7+ years): Every 2-3 months, adjusting for skin health</h1>
+     <h1 class="t1">Bathing Tips:</h1>
+     <h1 class="t1">✔️ Use lukewarm water and rinse thoroughly</h1>
+     <h1 class="t1">✔️ Avoid over-bathing to prevent dry skin</h1>
+     <h1 class="t1">✔️ Brush before and after baths to reduce shedding</h1>
+     <h1 class="t1">✔️ Dry completely, especially in colder weather</h1>
+
+    <div id="golden-link">
+      <a href="https://www.amazon.com/Puppies-Naturally-Tearless-Conditioner-Buttermilk/dp/B00CVTRO48?th=1"
+        target="_blank">
+        Puppy shampoo
+      </a>
+    </div>
+    <div id="golden-link">
+      <a href="https://www.amazon.com/Furminator-deShedding-Premium-Shampoo-Conditioner/dp/B01DFFYHFK?th=1"
+        target="_blank">
+        Adult shampoo
+      </a>
+    </div>
+    <div id="golden-link">
+      <a href="https://vetsbest.com/products/allergy-itch-relief-dog-shampoo">
+        Senior shampoo
+      </a>
+    </div>
+    <button class='back' onclick="goToScreen8()">Back</button>
+  </div>
+  <!-- German Shepherd (grooming)  -->
+  <div class="screen hidden" id="screen30">
+    <h1>German Shepherd</h1>
+    <h1>Grooming</h1>
+    <h1 class="t1">German Shepherds have a thick double coat that requires regular grooming to control shedding and keep their skin healthy</h1>
+     <h1 class="t1">Brushing: 3-5x per week (daily during shedding seasons)</h1>
+     <h1 class="t1">Ears: Check and clean weekly to prevent infections</h1>
+     <h1 class="t1">Nails: Trim every 2-4 weeks to avoid overgrowth</h1>
+     <h1 class="t1">Teeth: Brush 2-3x per week for dental health</h1>
+     <h1 class="t1">Grooming Tips:</h1>
+     <h1 class="t1">✔️ Use an undercoat rake & slicker brush for shedding control</h1>
+     <h1 class="t1">✔️ Brush before and after baths to prevent matting</h1>
+     <h1 class="t1">✔️ Check paw pads for cracks or debris</h1>
+     <h1 class="t1">✔️ Make grooming sessions positive with treats and praise</h1>
+    <button class='back' onclick="goToScreen8()">Back</button>
+  </div>
+
+  <!-- German Shepherd(potty)  -->
+  <div class="screen hidden" id="screen31">
+    <h1>German Shepherd</h1>
+    <h1>Potty breaks</h1>
+    <h1 class="t1">German Shepherds need a consistent potty routine for effective training and bladder control</h1>
+     <h1 class="t1"> Puppies (<6 months): Every 2-3 hours + after meals, play, & naps</h1>
+     <h1 class="t1">Juveniles (6-12 months): Every 3-5 hours</h1>
+     <h1 class="t1">Adults (1-7 years): Every 5-8 hours</h1>
+     <h1 class="t1"> Seniors (7+ years): More frequent, depending on bladder control</h1>
+     <h1 class="t1">Potty Training Tips:</h1>
+     <h1 class="t1">✔️ Stick to a regular schedule for quicker training
+</h1>
+     <h1 class="t1">✔️ Take them to the same spot each time for consistency
+</h1>
+     <h1 class="t1">✔️ Reward with praise or treats after success
+</h1>
+
+    <button class='back' onclick="goToScreen8()">Back</button>
+  </div>
+
+  <!-- ------------------------------------------------------------------------------>
+
+
+  <!-- ------------------------------------------------------------------------------>
+  <!--poodle (food)  -->
+  <div class="screen hidden" id="screen32">
+    <h1>Poodle</h1>
+    <h1>Food</h1>
+    <h1 class="t1">Poodles need a balanced diet rich in protein and healthy fats to support their active lifestyle</h1>
+    <h1 class="t1"> Puppies (<12 months): 3-4 meals/day, 1.5-3 cups total</h1>
+     <h1 class="t1">Adults (1-7 years): 2 meals/day, 1.5-3 cups total</h1>
+     <h1 class="t1">Seniors (7+ years): 2 smaller meals/day, adjust based on activity level</h1>
+     <h1 class="t1">Feeding Tips:</h1>
+     <h1 class="t1">✔️ Provide fresh water at all times</h1>
+     <h1 class="t1">✔️ Avoid fillers like corn and soy</h1>
+     <h1 class="t1">✔️ Adjust portions based on weight and activity level</h1>
+    <div id="golden-link">
+      <a href="https://www.royalcanin.com/us/dogs/products/retail-products/poodle-puppy-3080"
+        target="_blank">
+        Puppy food
+      </a>
+    </div>
+    <div id="golden-link">
+      <a href="https://www.amazon.com/ORIJEN-Original-Biologically-Appropriate-Grain/dp/B01I3K10ZC"
+        target="_blank">
+        Adult food
+      </a>
+    </div>
+    <div id="golden-link">
+      <a href="https://www.amazon.com/ORIJEN-Original-Biologically-Appropriate-Grain/dp/B01I3K10ZC">
+        Senior food
+      </a>
+    </div>
+      
+  
+    <button class='back' onclick="goToScreen9()">Back</button>
+  </div>
+  <!-- poodle(walking)  -->
+  <div class="screen hidden" id="screen33">
+    <h1>Poodle</h1>
+    <h1>Walks</h1>
+    <h1 class="t1">Poodles are energetic and intelligent dogs that need regular walks to stay healthy and stimulated</h1>
+     <h1 class="t1">Puppies (<6 months): 5 minutes per month of age, 2-3x/day</h1>
+     <h1 class="t1">Juveniles (6-12 months): 20-30 min walks, 2x/day</h1>
+     <h1 class="t1">Adults (1-7 years): 30-60 min walks, 1-2x/day</h1>
+     <h1 class="t1"> Seniors (7+ years): 20-40 min gentle walks, adjusting for mobility</h1>
+     <h1 class="t1">Walking Tips:</h1>
+     <h1 class="t1">✔️ Keep a steady pace to match their energy level</h1>
+     <h1 class="t1">✔️ Use a harness for better control and comfort</h1>
+     <h1 class="t1">✔️ Adjust walks based on weather—Poodles can get cold easily</h1>
+    <button class='back' onclick="goToScreen9()">Back</button>
+  </div>
+
+  <!--poodle(baths)  -->
+  <div class="screen hidden" id="screen34">
+    <h1>Poodle</h1>
+    <h1>Baths</h1>
+    <h1 class="t1">Poodles have a curly coat that requires regular bathing to maintain cleanliness and avoid matting</h1>
+    <h1 class="t1">Puppies (<12 months): Every 6-8 weeks or as needed</h1>
+    <h1 class="t1">Adults (1-7 years): Every 4-6 weeks, depending on activity</h1>
+    <h1 class="t1"> Seniors (7+ years): Every 4-6 weeks or as needed</h1>
+    <h1 class="t1">Bathing Tips:
+</h1>
+    <h1 class="t1">✔️ Brush before and after bathing to avoid matting</h1>
+    <h1 class="t1">✔️ Be sure to dry thoroughly, especially in their curly fur</h1>
+    <h1 class="t1">✔️ Avoid over-bathing to keep their skin from drying out</h1>
+    <div id="golden-link">
+      <a href="https://www.earthbath.com/products/oatmeal-aloe-shampoo-fragrance-free?srsltid=AfmBOoq18f2X9fV-iMBgw2W9O7irgMQoboaxxwPle2nJWyEnsNfgKWP8"
+        target="_blank">
+        Puppy shampoo
+      </a>
+    </div>
+    <div id="golden-link">
+      <a href="https://www.amazon.com/Furtastic-Watermelon-Detangler-Professional-Grooming/dp/B0BSLZVHXZ"
+        target="_blank">
+        Adult shampoo
+      </a>
+    </div>
+    <div id="golden-link">
+      <a href="https://vetsbest.com/products/hypo-allergenic-dog-shampoo">
+        Senior shampoo
+      </a>
+    </div>
+
+    <button class='back' onclick="goToScreen9()">Back</button>
+  </div>
+  <!-- poodle (grooming)  -->
+  <div class="screen hidden" id="screen35">
+    <h1>Poodle</h1>
+    <h1>Grooming</h1>
+    <h1 class="t1">Poodles have a curly, dense coat that requires regular grooming to prevent matting and maintain their health</h1>
+    <h1 class="t1">Brushing: 3-4 times a week, or daily during shedding seasons</h1>
+    <h1 class="t1">Ears: Check and clean weekly to prevent infections</h1>
+    <h1 class="t1">Nails: Trim every 2-4 weeks</h1>
+    <h1 class="t1"> Teeth: Brush 2-3 times a week</h1>
+    <h1 class="t1">Grooming Tips:</h1>
+    <h1 class="t1">✔️ Use a slicker brush and comb to prevent tangling</h1>
+    <h1 class="t1">✔️ Consider professional grooming every 6-8 weeks for trimming</h1>
+    <h1 class="t1">✔️ Regularly check for mats, especially around the ears and legs</h1>
+    <h1 class="t1">✔️ Clean their ears gently to prevent buildup of wax and dirt</h1>
+    
+    <button class='back' onclick="goToScreen9()">Back</button>
+  </div>
+
+  <!-- poodle(potty)  -->
+  <div class="screen hidden" id="screen36">
+    <h1>Poodle</h1>
+    <h1>Potty breaks</h1>
+    <h1 class="t1">Poodles need a consistent potty schedule to prevent accidents and support their training</h1>
+    <h1 class="t1">Puppies (<6 months): Every 2-3 hours + after meals, naps, and play</h1>
+    <h1 class="t1">Juveniles (6-12 months): Every 3-4 hours</h1>
+    <h1 class="t1">Adults (1-7 years): Every 4-6 hours</h1>
+    <h1 class="t1">Seniors (7+ years): More frequent, depending on bladder control</h1>
+    <h1 class="t1">Potty Training Tips:</h1>
+    <h1 class="t1">✔️ Stick to a regular schedule to reinforce good habits</h1>
+    <h1 class="t1">✔️ Take them to the same spot to make potty time predictable</h1>
+    <h1 class="t1">✔️ Reward with praise or treats after successful potty breaks</h1>
+    <button class='back' onclick="goToScreen9()">Back</button>
+  </div>
+
+  <!-- ------------------------------------------------------------------------------>
+
+  <!-- ------------------------------------------------------------------------------>
+  <!--Rottweiler (food)  -->
+  <div class="screen hidden" id="screen37">
+    <h1>Rottweiler</h1>
+    <h1>Food</h1>
+    <h1 class="t1">Rottweilers need a nutritious, high-protein diet to support their muscle mass and energy levels</h1>
+     <h1 class="t1">Puppies (<12 months): 3-4 meals/day, 3-4 cups total
+</h1>
+     <h1 class="t1">Adults (1-7 years): 2 meals/day, 3-5 cups total</h1>
+     <h1 class="t1">Seniors (7+ years): 2 smaller meals/day, adjust based on activity</h1>
+     <h1 class="t1">Feeding Tips:</h1>
+     <h1 class="t1">✔️ Provide fresh water at all times</h1>
+     <h1 class="t1">✔️ Avoid fillers like corn, wheat, and soy</h1>
+     <h1 class="t1">✔️ Adjust portions based on weight, activity, and metabolism</h1>
+     <div id="golden-link">
+       <a href="https://www.royalcanin.com/us/dogs/products/retail-products/rottweiler-puppy-3987"
+         target="_blank">
+         Puppy food
+       </a>
+     </div>
+     <div id="golden-link">
+       <a href="https://www.amazon.com/ORIJEN-Original-Biologically-Appropriate-Grain/dp/B01I3K10ZC"
+         target="_blank">
+         Adult food
+       </a>
+     </div>
+    <div id="golden-link">
+       <a href="https://www.amazon.com/Science-Diet-Senior-Longevity-Chicken/dp/B0009YSD6U?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=ATVPDKIKX0DER&gPromoCode=sns_us_en_5_2023Q4&gQT=2"
+         target="_blank">
+         Senior food
+       </a>
+     </div>
+     
+     <h1 class="t1"></h1> <h1 class="t1"></h1>
+    <button class='back' onclick="goToScreen10()">Back</button>
+  </div>
+  <!-- Rottweiler(walking)  -->
+  <div class="screen hidden" id="screen38">
+    <h1>Rottweiler</h1>
+    <h1>Walks</h1>
+    <h1 class="t1">Rottweilers are large, strong dogs that require regular walks to stay fit and mentally stimulated</h1>
+    <h1 class="t1">Puppies (<6 months): 10-15 minutes, 2-3x/day</h1>
+    <h1 class="t1"> Juveniles (6-12 months): 20-30 minutes, 2x/day</h1>
+    <h1 class="t1"> Adults (1-7 years): 45-60 minutes, 1-2x/day</h1>
+    <h1 class="t1">Seniors (7+ years): 20-40 minutes, adjusting for mobility</h1>
+    <h1 class="t1">Walking Tips:</h1>
+    <h1 class="t1">✔️ Use a strong leash and harness for better control</h1>
+    <h1 class="t1">✔️ Maintain a steady pace to match their energy level</h1>
+    <h1 class="t1">✔️ Avoid hot weather walks as Rottweilers can overheat easily</h1>
+
+    <button class='back' onclick="goToScreen10()">Back</button>
+  </div>
+
+  <!--Rottweiler(baths)  -->
+  <div class="screen hidden" id="screen39">
+    <h1>Rottweiler</h1>
+    <h1>Baths</h1>
+    <h1 class="t1">Rottweilers have a short, dense coat that requires regular bathing to keep their skin clean and healthy</h1>
+    <h1 class="t1">Puppies (<12 months): Every 6-8 weeks or as needed</h1>
+    <h1 class="t1"> Adults (1-7 years): Every 8-12 weeks</h1>
+    <h1 class="t1"> Seniors (7+ years): Every 8-12 weeks, adjusting for skin health</h1>
+    <h1 class="t1">Bathing Tips:</h1>
+    <h1 class="t1">✔️ Brush before bathing to remove loose fur and mats</h1>
+    <h1 class="t1">✔️ Rinse thoroughly to avoid shampoo residue on their coat</h1>
+    <h1 class="t1">✔️ Dry completely to prevent any skin irritation</h1>
+    <div id="golden-link">
+       <a href="https://www.earthbath.com/products/oatmeal-aloe-shampoo-fragrance-free?srsltid=AfmBOopA6Amr6X7EfxcCf14JNOepmMk-n-KCtWfhUi5qd1ZEHFDPBecr"
+         target="_blank">
+         Puppy shampoo
+       </a>
+     </div>
+     <div id="golden-link">
+       <a href="https://www.amazon.com/Furtastic-Watermelon-Detangler-Professional-Grooming/dp/B0BSLZVHXZ"
+         target="_blank">
+         Adult shampoo
+       </a>
+     </div>
+    <div id="golden-link">
+       <a href="https://vetsbest.com/products/hypo-allergenic-dog-shampoo"
+         target="_blank">
+         Senior shampoo
+       </a>
+     </div>
+     
+    <h1 class="t1"></h1><h1 class="t1"></h1>
+    <button class='back' onclick="goToScreen10()">Back</button>
+  </div>
+  <!-- Rottweiler (grooming)  -->
+  <div class="screen hidden" id="screen40">
+    <h1>Rottweiler</h1>
+    <h1>Grooming</h1>
+    <h1 class="t1">Rottweilers have a short, dense coat that requires minimal grooming, but regular care is needed to keep them healthy and clean</h1>
+    <h1 class="t1">Brushing: Once a week to remove loose hair and dirt</h1>
+    <h1 class="t1">Ears: Check and clean weekly to prevent infections</h1>
+    <h1 class="t1">Nails: Trim every 2-4 weeks to prevent overgrowth</h1>
+    <h1 class="t1">Teeth: Brush 2-3 times a week to promote oral health</h1>
+    <h1 class="t1">Grooming Tips:</h1>
+    <h1 class="t1">✔️ Use a rubber brush or shedding comb to remove loose hair</h1>
+    <h1 class="t1">✔️ Check for mats or tangles around the neck and tail</h1>
+    <h1 class="t1">✔️ Clean their ears with a damp cloth or ear cleaner</h1>
+    <h1 class="t1">✔️ Make grooming sessions positive with rewards and praise</h1>
+    
+    <button class='back' onclick="goToScreen10()">Back</button>
+  </div>
+
+  <!-- Rottweiler(potty)  -->
+  <div class="screen hidden" id="screen41">
+    <h1>Rottweiler</h1>
+    <h1>Potty breaks</h1>
+    <h1 class="t1">Rottweilers need regular potty breaks to stay comfortable and maintain good habits</h1>
+    <h1 class="t1">Puppies (<6 months): Every 2-3 hours + after meals, naps, and play</h1>
+    <h1 class="t1">Juveniles (6-12 months): Every 3-4 hours</h1>
+    <h1 class="t1">Adults (1-7 years): Every 4-6 hours</h1>
+    <h1 class="t1">Seniors (7+ years): More frequent, depending on bladder control</h1>
+    <h1 class="t1">Potty Training Tips:</h1>
+    <h1 class="t1">✔️ Stick to a consistent schedule to encourage good habits</h1>
+    <h1 class="t1">✔️ Take them to the same spot each time for predictability</h1>
+    <h1 class="t1">✔️ Reward with praise or treats after successful potty breaks</h1>
+    <button class='back' onclick="goToScreen10()">Back</button>
+  </div>
+
+  <!-- ------------------------------------------------------------------------------>
+
+ 
+  <!-- ------------------------------------------------------------------------------>
+  <!--Yorkshire Terrier (food)  -->
+  <div class="screen hidden" id="screen42">
+    <h1>Yorkshire Terrier</h1>
+    <h1>Food</h1>
+     <h1 class="t1">Yorkshire Terriers need a high-quality, balanced diet to support their small size, energy, and overall health</h1>
+    <h1 class="t1">Puppies (<12 months): 3-4 meals/day, ½-1 cup total</h1>
+    <h1 class="t1">Adults (1-7 years): 2 meals/day, ½-1 cup total</h1>
+    <h1 class="t1">Seniors (7+ years): 2 smaller meals/day, adjusting based on activity and health</h1>
+    <h1 class="t1">Feeding Tips:</h1>
+    <h1 class="t1">✔️ Provide fresh water at all times</h1>
+    <h1 class="t1">✔️ Avoid fillers like corn and soy</h1>
+    <h1 class="t1">✔️ Adjust portions based on weight, activity, and metabolism</h1>
+    <div id="golden-link">
+       <a href="https://www.royalcanin.com/us/dogs/products/retail-products/yorkshire-terrier-puppy-3972"
+         target="_blank">
+         Puppy food
+       </a>
+     </div>
+     <div id="golden-link">
+       <a href="https://www.amazon.com/Blue-Buffalo-Protection-Formula-Natural/dp/B003O7ZON4?th=1"
+         target="_blank">
+         Adult food
+       </a>
+     </div>
+    <div id="golden-link">
+       <a href="https://www.amazon.com/Science-Diet-Senior-Longevity-Chicken/dp/B0009YSD6U?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=ATVPDKIKX0DER&gPromoCode=sns_us_en_5_2023Q4&gQT=2&th=1"
+         target="_blank">
+         senior food
+       </a>
+     </div>
+     
+    <button class='back' onclick="goToScreen11()">Back</button>
+  </div>
+  <!-- Yorkshire Terrier(walking)  -->
+  <div class="screen hidden" id="screen43">
+    <h1>Yorkshire Terrier</h1>
+    <h1>Walks</h1>
+    <h1 class="t1">Yorkshire Terriers are small but energetic dogs that enjoy regular walks to stay healthy and stimulated</h1>
+    <h1 class="t1"> Puppies (<6 months): 5-10 minutes, 2-3x/day</h1>
+    <h1 class="t1">Juveniles (6-12 months): 15-20 minutes, 2x/day</h1>
+    <h1 class="t1"> Adults (1-7 years): 20-30 minutes, 1-2x/day</h1>
+    <h1 class="t1">Seniors (7+ years): 10-20 minutes, adjusting for mobility</h1>
+    <h1 class="t1">✔️ Use a harness to protect their small neck</h1>
+    <h1 class="t1">✔️ Keep a gentle pace, as Yorkies can tire quickly</h1>
+    <h1 class="t1">✔️ Avoid extreme weather—Yorkies can be sensitive to both heat and cold</h1>
+      
+    <button class='back' onclick="goToScreen11()">Back</button>
+  </div>
+
+  <!--Yorkshire Terrier(baths)  -->
+  <div class="screen hidden" id="screen44">
+    <h1>Yorkshire Terrier</h1>
+    <h1>Baths</h1>
+    <h1 class="t1">Yorkshire Terriers have a fine, silky coat that requires regular bathing to keep it clean and shiny</h1>
+    <h1 class="t1">Puppies (<12 months): Every 4-6 weeks or as needed</h1>
+    <h1 class="t1">Adults (1-7 years): Every 4-6 weeks, depending on activity</h1>
+    <h1 class="t1">Seniors (7+ years): Every 4-6 weeks or as needed</h1>
+    <h1 class="t1">Bathing Tips:</h1>
+    <h1 class="t1">✔️ Use a gentle, moisturizing shampoo designed for small breeds</h1>
+    <h1 class="t1">✔️ Brush their coat before bathing to prevent tangles</h1>
+    <h1 class="t1">✔️ Dry carefully, using a towel or blow dryer on low heat to prevent their coat from matting</h1>
+    <div id="golden-link">
+       <a href="https://www.earthbath.com/products/oatmeal-aloe-shampoo-fragrance-free?srsltid=AfmBOop10W0yqqbP_4xfpiWBDTKysdIHDm-OXu1B2_cVoBijfC63JY3g"
+         target="_blank">
+         Puppy shampoo
+       </a>
+     </div>
+     <div id="golden-link">
+       <a href="https://iodogs.com/products/silky-coating-shampoo"
+         target="_blank">
+         Adult shampoo
+       </a>
+     </div>
+     <div id="golden-link">
+        <a href="https://vetsbest.com/products/hypo-allergenic-dog-shampoo"
+          target="_blank">
+          senior shampoo
+        </a>
+      </div>
+    <button class='back' onclick="goToScreen11()">Back</button>
+  </div>
+  <!-- Yorkshire Terrier (grooming)  -->
+  <div class="screen hidden" id="screen45">
+    <h1>Yorkshire Terrier</h1>
+    <h1>Grooming</h1>
+    <h1 class="t1">Yorkshire Terriers have a fine, silky coat that requires regular grooming to prevent tangles and maintain their health</h1>
+    <h1 class="t1">Brushing: Daily to prevent mats and tangles</h1>
+    <h1 class="t1">Haircuts: Every 4-6 weeks for a neat appearance</h1>
+    <h1 class="t1">Ears: Check and clean weekly to prevent wax buildup and infections</h1>
+    <h1 class="t1">Nails: Trim every 2-4 weeks to prevent overgrowth and discomfort</h1>
+    <h1 class="t1">Grooming Tips:</h1>
+    <h1 class="t1">✔️ Use a pin brush or soft bristle brush with a detangling spray</h1>
+    <h1 class="t1">✔️ Reward with treats to make grooming a positive experience
+</h1>
+     <h1 class="t1">✔️ Trim around the eyes carefully to improve visibility and comfort</h1>
+
+    <button class='back' onclick="goToScreen11()">Back</button>
+  </div>
+
+  <!-- Yorkshire Terrier(potty)  -->
+  <div class="screen hidden" id="screen46">
+    <h1>Yorkshire Terrier</h1>
+    <h1>Potty breaks</h1>
+    <h1 class="t1">Yorkshire Terriers have small bladders and need frequent potty breaks to prevent accidents</h1>
+    <h1 class="t1"> Puppies (<6 months): Every 1-2 hours + after meals, naps, and play</h1>
+    <h1 class="t1">Juveniles (6-12 months): Every 2-3 hours</h1>
+    <h1 class="t1">Adults (1-7 years): Every 3-4 hours</h1>
+    <h1 class="t1">Seniors (7+ years): More frequent, depending on bladder control</h1>
+    <h1 class="t1">Potty Training Tips:</h1>
+    <h1 class="t1">✔️ Stick to a consistent schedule for faster training</h1>
+    <h1 class="t1">✔️ Take them to the same spot each time to reinforce habits</h1>
+    <h1 class="t1">✔️ Reward with praise or treats after successful potty breaks</h1>
+    <button class='back' onclick="goToScreen11()">Back</button>
+  </div>
+
+  <!-- ------------------------------------------------------------------------------>
+
+
+
+  <!--Maine Coon (food)  -->
+  <div class="screen hidden" id="screen47">
+    <h1>Maine Coon</h1>
+    <h1>Food</h1>
+    <h1 class="t1">Maine Coons are large, active cats that need a high-protein diet to support their size and energy levels</h1>
+     <h1 class="t1">Kittens (<12 months): 4 small meals/day, ½-1 cup total</h1>
+     <h1 class="t1"> Adults (1-7 years): 2-3 meals/day, 1-1.5 cups total</h1>
+     <h1 class="t1">Seniors (7+ years): 2 smaller meals/day, adjusting for weight and activity</h1>
+     <h1 class="t1">Feeding Tips:</h1>
+     <h1 class="t1">✔️ Provide fresh water at all times</h1>
+     <h1 class="t1">✔️ Adjust portions based on weight and activity level</h1>
+     <h1 class="t1">✔️ Watch for Allergies: Monitor for food sensitivities (itching, vomiting)</h1>
+
+    <div id="golden-link">
+       <a href="https://www.royalcanin.com/us/cats/products/retail-products/maine-coon-kitten-2558"
+         target="_blank">
+         Kitten  food
+       </a>
+     </div>
+     <div id="golden-link">
+       <a href="https://www.amazon.com/Blue-Buffalo-Wilderness-Protein-Natural/dp/B002UT92EY?th=1"
+         target="_blank">
+         Adult food
+       </a>
+     </div>
+     <div id="golden-link">
+        <a href="https://www.amazon.com/Science-Diet-Senior-Indoor-Chicken/dp/B000KTWAWC?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=ATVPDKIKX0DER&gPromoCode=sns_us_en_5_2023Q4&gQT=2"
+          target="_blank">
+          senior food
+        </a>
+      </div>
+    <button class='back' onclick="goToScreen5()">Back</button>
+  </div>
+  <!--Maine Coon(baths)  -->
+  <div class="screen hidden" id="screen49">
+    <h1>Maine Coon</h1>
+    <h1>Baths</h1>
+    <h1 class="t1">Maine Coons have thick fur that needs regular bathing to stay clean.</h1>
+<h1 class="t1">Kittens (<12 months): Every 6-8 weeks</h1>
+<h1 class="t1">Adults (1-7 years): Every 4-6 weeks</h1>
+<h1 class="t1">Seniors (7+ years): Every 6-8 weeks or as needed</h1>
+
+<h1 class="t1">Bathing Tips:</h1>
+<h1 class="t1">✔️ Brush before bathing to prevent tangles</h1>
+<h1 class="t1">✔️ Use lukewarm water and a cat-friendly shampoo</h1>
+<h1 class="t1">✔️ Dry thoroughly to avoid matting</h1>
+<div id="golden-link">
+  <a href="https://www.amazon.com/Burts-Bees-Tearless-Shampoo-Buttermilk/dp/B01CCFPC08?th=1"
+    target="_blank">
+    Kitten  shampoo
+  </a>
+</div>
+<div id="golden-link">
+  <a href="https://www.earthbath.com/products/oatmeal-aloe-shampoo-fragrance-free?srsltid=AfmBOopUsKNw4GokZPIoLnMZOzGlQh1LWh4foojRvZvkbK9QfYCIdjsA"
+    target="_blank">
+    Adult shampoo
+  </a>
+</div>
+<div id="golden-link">
+   <a href="https://www.amazon.com/Vets-Best-Waterless-Veterinarian-Formulated/dp/B0002AQN2M?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=ATVPDKIKX0DER&gPromoCode=sns_us_en_5_2023Q4&gQT=1"
+     target="_blank">
+     senior shampoo
+   </a>
+ </div>
+    <button class='back' onclick="goToScreen5()">Back</button>
+  </div>
+  <!-- Maine Coon (grooming)  -->
+  <div class="screen hidden" id="screen50">
+    <h1>Maine Coon</h1>
+    <h1>Grooming</h1>
+    <h1 class="t1">Maine Coons need regular grooming to keep their thick fur tangle-free.</h1>
+<h1 class="t1">Kittens (<12 months): Brush 2-3x per week</h1>
+<h1 class="t1">Adults (1-7 years): Brush 3-4x per week</h1>
+<h1 class="t1">Seniors (7+ years): Brush daily if shedding increases</h1>
+
+<h1 class="t1">Grooming Tips:</h1>
+<h1 class="t1">✔️ Use a wide-tooth comb for thick fur</h1>
+<h1 class="t1">✔️ Detangle mats gently with a slicker brush</h1>
+<h1 class="t1">✔️ Trim nails monthly to prevent overgrowth</h1>
+<h1 class="t1">✔️ Clean ears weekly to avoid infections</h1>
+    <button class='back' onclick="goToScreen5()">Back</button>
+  </div>
+
+  <!--Maine Coon(litter)  -->
+  <div class="screen hidden" id="screen51">
+    <h1>Maine Coon</h1>
+    <h1>Litter box</h1>
+    <h1 class="t1">Maine Coons need a large, clean litter box for comfort.</h1>
+<h1 class="t1">Kittens (<12 months): Check & clean 2-3x daily</h1>
+<h1 class="t1">Adults (1-7 years): Scoop daily, deep clean weekly</h1>
+<h1 class="t1">Seniors (7+ years): Keep easily accessible, clean 2x daily</h1>
+
+<h1 class="t1">Litter Box Tips:</h1>
+<h1 class="t1">✔️ Use a large, high-sided box to fit their size</h1>
+<h1 class="t1">✔️ Choose unscented, clumping litter for comfort</h1>
+<h1 class="t1">✔️ Place in a quiet, private area</h1>
+<h1 class="t1">✔️ Provide one box per cat, plus an extra</h1>
+    <button class='back' onclick="goToScreen5()">Back</button>
+  </div>
+
+  <!-- ------------------------------------------------------------------------------>
+
+
+
+
+  <!--Saimese (food)  -->
+  <div class="screen hidden" id="screen52">
+    <h1>Saimese</h1>
+    <h1>Food</h1>
+    <h1 class="t1">Siamese cats need a high-protein diet to support their slim, active bodies.</h1>
+<h1 class="t1">Kittens (<12 months): 3-4 meals a day, ½-1 cup total</h1>
+<h1 class="t1">Adults (1-7 years): 2-3 meals/day, 1-1.5 cups total</h1>
+<h1 class="t1">Seniors (7+ years): 2 smaller meals/day, adjust for weight</h1>
+
+<h1 class="t1">Feeding Tips:</h1>
+<h1 class="t1">✔️ Choose high-protein food with real meat</h1>
+<h1 class="t1">✔️ Mix wet & dry food for hydration and dental health</h1>
+<h1 class="t1">✔️ Avoid fillers like corn, wheat, and soy</h1>
+<h1 class="t1">✔️ Monitor weight, as Siamese cats are prone to overeating</h1>
+
+<div id="golden-link">
+  <a href="https://www.royalcanin.com/us/cats/products/retail-products/siamese-adult-2551"
+    target="_blank">
+    Kitten  food
+  </a>
+</div>
+<div id="golden-link">
+  <a href="https://bluebuffalo.com/dry-cat-food/wilderness/chicken/"
+    target="_blank">
+    Adult food
+  </a>
+</div>
+<div id="golden-link">
+   <a href="https://www.hillspet.com/cat-food/sd-feline-adult-7-plus-indoor-dry"
+     target="_blank">
+     senior food
+   </a>
+ </div>
+    <button class='back' onclick="goToScreen12()">Back</button>
+  </div>
+  <!-- Saimese(walking)  -->
+  <div class="screen hidden" id="screen53">
+    <h1>Saimese</h1>
+    <h1>Walks</h1>
+    
+    <button class='back' onclick="goToScreen12()">Back</button>
+  </div>
+
+  <!--Saimese(baths)  -->
+  <div class="screen hidden" id="screen54">
+    <h1>Saimese</h1>
+    <h1>Baths</h1>
+    <h1 class="t1">Siamese cats have short fur and rarely need baths.</h1>
+<h1 class="t1">Kittens (<12 months): Only if dirty</h1>
+<h1 class="t1">Adults (1-7 years): Every 2-3 months or as needed</h1>
+<h1 class="t1">Seniors (7+ years): Bathe only when necessary</h1>
+
+<h1 class="t1">Bathing Tips:</h1>
+<h1 class="t1">✔️ Use warm water and gentle cat shampoo</h1>
+<h1 class="t1">✔️ Rinse thoroughly to avoid residue</h1>
+<h1 class="t1">✔️ Dry well with a towel</h1>
+
+<div id="golden-link">
+  <a href="https://www.royalcanin.com/us/cats/products/retail-products/siamese-adult-2551"
+    target="_blank">
+    Kitten  shampoo
+  </a>
+</div>
+<div id="golden-link">
+  <a href="https://bluebuffalo.com/dry-cat-food/wilderness/chicken/"
+    target="_blank">
+    Adult shampoo
+  </a>
+</div>
+<div id="golden-link">
+   <a href="https://www.hillspet.com/cat-food/sd-feline-adult-7-plus-indoor-dry"
+     target="_blank">
+     senior shampoo
+   </a>
+ </div>
+
+    <button class='back' onclick="goToScreen12()">Back</button>
+  </div>
+  <!-- Saimese(grooming)  -->
+  <div class="screen hidden" id="screen55">
+    <h1>Saimese</h1>
+    <h1>Grooming</h1>
+    \<h1 class="t1">Siamese cats have short, fine fur and need minimal grooming.</h1>
+    <h1 class="t1">Kittens (<12 months): Brush 1x per week</h1>
+    <h1 class="t1">Adults (1-7 years): Brush 1-2x per week</h1>
+    <h1 class="t1">Seniors (7+ years): Brush 2x per week if shedding increases</h1>
+    
+    <h1 class="t1">Grooming Tips:</h1>
+    <h1 class="t1">✔️ Use a soft bristle brush to remove loose hair</h1>
+    <h1 class="t1">✔️ Wipe fur with a damp cloth for extra shine</h1>
+    <h1 class="t1">✔️ Trim nails monthly to prevent overgrowth</h1>
+    <h1 class="t1">✔️ Clean ears weekly to prevent wax buildup</h1>
+    <button class='back' onclick="goToScreen12()">Back</button>
+  </div>
+
+  <!-- Saimese(litter)  -->
+  <div class="screen hidden" id="screen56">
+    <h1>Saimese</h1>
+    <h1>Litter box</h1>
+    <button class='back' onclick="goToScreen12()">Back</button>
+  </div>
+
+  <!-- ------------------------------------------------------------------------------>
+
+
+
+
+
+
+  <!--persian (food)  -->
+  <div class="screen hidden" id="screen57">
+    <h1>Persian</h1>
+    <h1>Food</h1>
+    <button class='back' onclick="goToScreen13()">Back</button>
+  </div>
+  <!-- persian(walking)  -->
+  <div class="screen hidden" id="screen58">
+    <h1>Persian</h1>
+    <h1>Walks</h1>
+    <button class='back' onclick="goToScreen13()">Back</button>
+  </div>
+
+  <!--persian(baths)  -->
+  <div class="screen hidden" id="screen59">
+    <h1>Persian</h1>
+    <h1>Baths</h1>
+    <button class='back' onclick="goToScreen13()">Back</button>
+  </div>
+  <!-- persian(grooming)  -->
+  <div class="screen hidden" id="screen60">
+    <h1>Persian</h1>
+    <h1>Grooming</h1>
+    <button class='back' onclick="goToScreen13()">Back</button>
+  </div>
+
+  <!-- persian(litter)  -->
+  <div class="screen hidden" id="screen61">
+    <h1>Persian</h1>
+    <h1>Litter box</h1>
+    <button class='back' onclick="goToScreen13()">Back</button>
+  </div>
+
+  <!-- ------------------------------------------------------------------------------>
+
+
+
+
+  <!--bengal (food)  -->
+  <div class="screen hidden" id="screen62">
+    <h1>Bengal</h1>
+    <h1>Food</h1>
+    <button class='back' onclick="goToScreen14()">Back</button>
+  </div>
+  <!-- bengal(walking)  -->
+  <div class="screen hidden" id="screen63">
+    <h1>Bengal</h1>
+    <h1>Walks</h1>
+    <button class='back' onclick="goToScreen14()">Back</button>
+  </div>
+
+  <!--bengal(baths)  -->
+  <div class="screen hidden" id="screen64">
+    <h1>Bengal</h1>
+    <h1>Baths</h1>
+    <button class='back' onclick="goToScreen14()">Back</button>
+  </div>
+  <!-- bengal(grooming)  -->
+  <div class="screen hidden" id="screen65">
+    <h1>Bengal</h1>
+    <h1>Grooming</h1>
+    <button class='back' onclick="goToScreen14()">Back</button>
+  </div>
+
+  <!-- bengal(litter)  -->
+  <div class="screen hidden" id="screen66">
+    <h1>Bengal</h1>
+    <h1>Litter box</h1>
+    <button class='back' onclick="goToScreen14()">Back</button>
+  </div>
+
+  <!-- ------------------------------------------------------------------------------>
+
+
+
+
+  <!--Ragdoll (food)  -->
+  <div class="screen hidden" id="screen67">
+    <h1>Ragdoll</h1>
+    <h1>Food</h1>
+    <button class='back' onclick="goToScreen15()">Back</button>
+  </div>
+  <!-- Ragdoll(walking)  -->
+  <div class="screen hidden" id="screen68">
+    <h1>Ragdoll</h1>
+    <h1>Walks</h1>
+    <button class='back' onclick="goToScreen15()">Back</button>
+  </div>
+
+  <!--Ragdoll(baths)  -->
+  <div class="screen hidden" id="screen69">
+    <h1>Ragdoll</h1>
+    <h1>Baths</h1>
+    <button class='back' onclick="goToScreen15()">Back</button>
+  </div>
+  <!-- Ragdoll(grooming)  -->
+  <div class="screen hidden" id="screen70">
+    <h1>Ragdoll</h1>
+    <h1>Grooming</h1>
+    <button class='back' onclick="goToScreen15()">Back</button>
+  </div>
+
+  <!-- Ragdoll(litter)  -->
+  <div class="screen hidden" id="screen71">
+    <h1>Ragdoll</h1>
+    <h1>Litter box</h1>
+    <button class='back' onclick="goToScreen15()">Back</button>
+  </div>
+
+  <!-- ------------------------------------------------------------------------------>
+
+
+
+  <!--British Shorthair (food)  -->
+  <div class="screen hidden" id="screen72">
+    <h1>British Shorthair</h1>
+    <h1>Food</h1>
+    <button class='back' onclick="goToScreen16()">Back</button>
+  </div>
+  <!-- British Shorthair(walking)  -->
+  <div class="screen hidden" id="screen73">
+    <h1>British Shorthair</h1>
+    <h1>Walks</h1>
+    <button class='back' onclick="goToScreen16()">Back</button>
+  </div>
+
+  <!--British Shorthair(baths)  -->
+  <div class="screen hidden" id="screen74">
+    <h1>British Shorthair</h1>
+    <h1>Baths</h1>
+    <button class='back' onclick="goToScreen16()">Back</button>
+  </div>
+  <!-- British Shorthair(grooming)  -->
+  <div class="screen hidden" id="screen75">
+    <h1>British Shorthair</h1>
+    <h1>Grooming</h1>
+    <button class='back' onclick="goToScreen16()">Back</button>
+  </div>
+
+  <!-- British Shorthair(litter)  -->
+  <div class="screen hidden" id="screen76">
+    <h1>British Shorthair</h1>
+    <h1>Litter box</h1>
+    <button class='back' onclick="goToScreen16()">Back</button>
+  </div>
+
+  <!-- ------------------------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

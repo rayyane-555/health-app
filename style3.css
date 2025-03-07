@@ -1,0 +1,172 @@
+.Food{
+  background-color: white;
+ font-size: 150%;
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+
+}
+.walks{
+  background-color: white;
+ font-size: 150%;
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+.baths{
+  background-color: white;
+ font-size: 150%;
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.grooming{
+  background-color: white;
+ font-size: 150%;
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.potty{
+  background-color: white;
+ font-size: 140%;
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.GoldenRetriever-food {
+  font-size: 200%;
+  text-align: center; 
+  width: 90%; 
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#golden-link {
+  position: relative; 
+  width: 100%; 
+  height: 100vh; 
+}
+
+#golden-link a {
+
+  color: black;
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.t1{
+  font-size: 100%;
+  text-align: center;
+
+}
+.t2{
+  font-size: 100%;
+  text-align: center;
+
+}
+.Food2{
+  background-color: white;
+ font-size: 150%;
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+
+}
+
+.baths2{
+  background-color: white;
+ font-size: 150%;
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.grooming2{
+  background-color: white;
+ font-size: 150%;
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.potty2{
+  background-color: white;
+ font-size: 140%;
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
