@@ -1,388 +1,396 @@
 @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+  
+    select {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  }
+  * {
+    user-select: none;  
+    cursor: default;  
+  }
+  a {
+    user-select: auto; /* Allow selecting links */
+    cursor: pointer; /* Show hand cursor on hover */
+}
+
+  
   body {
-    padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+      font-family: 'Arial', sans-serif; 
+    }
+  
+    .phone {
+      width: 430px;
+      height: 810px;
+      background-color: black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 35px;
+  
+    }
+  
+    .screen {
+      width: 400px;
+      height: 770px;
+      background-color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      border-radius: 35px;
+      overflow: hidden;
+  
+  
+    }
+  
+  
+    .hidden {
+      display: none;
+    }
+  
+  
+    .back {
+      padding: 10px;
+      font-size: 16px;
+      background-color: rgb(116, 204, 136);
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+      position: absolute;
+      top: 2.5%;
+      left: 10%;
+      transform: translate(-50%, -50%);
+      border-radius: 5px;
+    }
+  
+    h1 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    label {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+    }
+  
+    select {
+      width: 100%;
+      max-width: 300px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background-color: white;
+      appearance: none;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+  
+    #info {
+      background: white;
+      padding: 15px;
+      max-width: 300px;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+   
+    #info p {
+      font-size: 30px;
+      margin: 5px 0;
+    }
+  
+    .form-container {
+      width: 100%;
+      max-width: 300px;
+      margin-top: 30px;
+    }
+  
+  
+  
+    #Info {
+      width: 150px;
+      height: 100px;
+      border-radius: 20px;
+      background-color: black;
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: transform 0.3s, background-color 0.3s;
+      font-size: 25px;
   }
-
-  select {
-    font-size: 14px;
-    padding: 8px;
+  
+  #Info:hover {
+      background-color: white;
+      color: black;
+      border: 3px solid;
+      transform: translate(-50%, -50%) scale(1.1); 
   }
-
-  h1 {
-    font-size: 20px;
-  }
-}
-* {
-  user-select: none;  
-  cursor: default;  
-}
-a {
-  user-select: auto; /* Allow selecting links */
-  cursor: pointer; /* Show hand cursor on hover */
-}
-
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  .logo {
+         
+          animation: pulse 3s infinite ease-in-out;
+      }
+  
+      @keyframes pulse {
+          0%, 100% {
+              transform: scale(1);
+          }
+          50% {
+              transform: scale(1.1); 
+          }
+      }
+  
+  
+  .image-button {
+    border: none;
+    background: none;
+    padding: 0;
     margin: 0;
-    background-color: #f5f5f5;
-    font-family: 'Arial', sans-serif; 
+    display: inline-block;
+    cursor: pointer;
   }
-
-  .phone {
-    width: 430px;
-    height: 810px;
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 35px;
-
-  }
-
-  .screen {
-    width: 400px;
-    height: 770px;
-    background-color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 35px;
-    overflow: hidden;
-
-
-  }
-
-
-  .hidden {
-    display: none;
-  }
-
-
-  .back {
+  
+  
+  .Info {
     padding: 10px;
     font-size: 16px;
-    background-color: rgb(116, 204, 136);
+    background-color: black;
     color: white;
     border: none;
     cursor: pointer;
     margin-top: 20px;
+  }
+  
+  
+  .dog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px; 
+    height: auto;
     position: absolute;
-    top: 2.5%;
-    left: 10%;
+    top: 30%;
+    left: 30%;
     transform: translate(-50%, -50%);
-    border-radius: 5px;
-  }
-
-  h1 {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-
-  h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
-  label {
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 10px;
-    display: block;
-  }
-
-  select {
-    width: 100%;
-    max-width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    background-color: white;
-    appearance: none;
-    cursor: pointer;
-    margin-bottom: 20px;
-  }
-
-  #info {
-    background: white;
-    padding: 15px;
-    max-width: 300px;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-
-  #info p {
-    font-size: 30px;
-    margin: 5px 0;
-  }
-
-  .form-container {
-    width: 100%;
-    max-width: 300px;
-    margin-top: 30px;
-  }
-
-
-
-  #Info {
-    width: 150px;
-    height: 100px;
-    border-radius: 20px;
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border-radius: 25px;
     transition: transform 0.3s, background-color 0.3s;
-    font-size: 25px;
-}
-
-#Info:hover {
-    background-color: white;
-    color: black;
-    border: 3px solid;
-    transform: translate(-50%, -50%) scale(1.1); 
-}
-
-#map{
+  
+  }
+  .dog:hover{
+    transform: translate(-50%, -50%) scale(1.2); 
+  }
+  .cat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px; 
+    height: auto;
     position: absolute;
-    top: 50%;
+    top: 30%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+  
+  }
+  .cat:hover{
+    transform: translate(-50%, -50%) scale(1.2); 
+  }
+  .main-coon{
+    width: 100px; 
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+  
+  }
+  .main-coon:hover {
+    transform: translate(-50%, -50%) scale(1.3); 
+  }
+  .golden{
+    width: 100px; 
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+  
+  }
+  .golden:hover{
+    transform: translate(-50%, -50%) scale(1.3); 
+  }
+  .french-bulldog{
+    width: 100px; 
+    height: auto;
+    position: absolute;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-}
-.image-button {
-  border: none;
-  background: none;
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-  cursor: pointer;
-}
-
-
-.Info {
-  padding: 10px;
-  font-size: 16px;
-  background-color: black;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-
-.dog{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 130px; 
-  height: auto;
-  position: absolute;
-  top: 30%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  transition: transform 0.3s, background-color 0.3s;
-
-}
-.dog:hover{
-  transform: translate(-50%, -50%) scale(1.2); 
-}
-.cat{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 130px; 
-  height: auto;
-  position: absolute;
-  top: 30%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  transition: transform 0.3s, background-color 0.3s;
-
-}
-.cat:hover{
-  transform: translate(-50%, -50%) scale(1.2); 
-}
-.main-coon{
-  width: 100px; 
-  height: auto;
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  transition: transform 0.3s, background-color 0.3s;
-
-}
-.main-coon:hover {
-  transform: translate(-50%, -50%) scale(1.3); 
-}
-.golden{
-  width: 100px; 
-  height: auto;
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  transition: transform 0.3s, background-color 0.3s;
-
-}
-.golden:hover{
-  transform: translate(-50%, -50%) scale(1.3); 
-}
-.french-bulldog{
-  width: 100px; 
-  height: auto;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  transition: transform 0.3s, background-color 0.3s;
-
-}
-.french-bulldog:hover{
-  transform: translate(-50%, -50%) scale(1.3); 
-}
-.german{
-  width: 100px; 
-  height: auto;
-  position: absolute;
-  top: 20%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  transition: transform 0.3s, background-color 0.3s;
-
-}
-.german:hover{
-  transform: translate(-50%, -50%) scale(1.3); 
-}
-.poodle{
-  width: 100px; 
-  height: auto;
-  position: absolute;
-  top: 40%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  transition: transform 0.3s, background-color 0.3s;
-
-}
-.poodle:hover{
-  transform: translate(-50%, -50%) scale(1.3); 
-}
-.rotwiler{
-  width: 100px; 
-  height: auto;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  transition: transform 0.3s, background-color 0.3s;
-
-}
-.rotwiler:hover{
-  transform: translate(-50%, -50%) scale(1.3); 
-}
-.york{
-  width: 100px; 
-  height: auto;
-  position: absolute;
-  top: 40%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  transition: transform 0.3s, background-color 0.3s;
-
-}
-.york:hover{
-  transform: translate(-50%, -50%) scale(1.3); 
-}
-
-.saimese{
-  width: 100px; 
-  height: auto;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  transition: transform 0.3s, background-color 0.3s;
-
-}
-.saimese:hover{
-  transform: translate(-50%, -50%) scale(1.3); 
-}
-.persian{
-  width: 100px; 
-  height: auto;
-  position: absolute;
-  top: 20%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  transition: transform 0.3s, background-color 0.3s;
-
-}
-.persian:hover{
-  transform: translate(-50%, -50%) scale(1.3); 
-}
-.bengal{
-  width: 100px; 
-  height: auto;
-  position: absolute;
-  top: 40%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  transition: transform 0.3s, background-color 0.3s;
-
-}
-.bengal:hover{
-  transform: translate(-50%, -50%) scale(1.3); 
-}
-.ragdoll{
-  width: 100px; 
-  height: auto;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  transition: transform 0.3s, background-color 0.3s;
-
-}
-.ragdoll:hover{
-  transform: translate(-50%, -50%) scale(1.3); 
-}
-.british-shorthair{
-  width: 100px; 
-  height: auto;
-  position: absolute;
-  top: 40%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-  transition: transform 0.3s, background-color 0.3s;
-
-}
-.british-shorthair:hover{
-  transform: translate(-50%, -50%) scale(1.3); 
-}
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+  
+  }
+  .french-bulldog:hover{
+    transform: translate(-50%, -50%) scale(1.3); 
+  }
+  .german{
+    width: 100px; 
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+  
+  }
+  .german:hover{
+    transform: translate(-50%, -50%) scale(1.3); 
+  }
+  .poodle{
+    width: 100px; 
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+  
+  }
+  .poodle:hover{
+    transform: translate(-50%, -50%) scale(1.3); 
+  }
+  .rotwiler{
+    width: 100px; 
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+  
+  }
+  .rotwiler:hover{
+    transform: translate(-50%, -50%) scale(1.3); 
+  }
+  .york{
+    width: 100px; 
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+  
+  }
+  .york:hover{
+    transform: translate(-50%, -50%) scale(1.3); 
+  }
+  
+  .saimese{
+    width: 100px; 
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+  
+  }
+  .saimese:hover{
+    transform: translate(-50%, -50%) scale(1.3); 
+  }
+  .persian{
+    width: 100px; 
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+  
+  }
+  .persian:hover{
+    transform: translate(-50%, -50%) scale(1.3); 
+  }
+  .bengal{
+    width: 100px; 
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+  
+  }
+  .bengal:hover{
+    transform: translate(-50%, -50%) scale(1.3); 
+  }
+  .ragdoll{
+    width: 100px; 
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+  
+  }
+  .ragdoll:hover{
+    transform: translate(-50%, -50%) scale(1.3); 
+  }
+  .british-shorthair{
+    width: 100px; 
+    height: auto;
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    transition: transform 0.3s, background-color 0.3s;
+  
+  }
+  .british-shorthair:hover{
+    transform: translate(-50%, -50%) scale(1.3); 
+  }
+  
